@@ -60,6 +60,19 @@ class MenuViewController: UIViewController {
         return btn
     }()
     
+    private let buttonLeaderboard: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("📋", for: .normal)
+        btn.titleLabel?.textColor = .black
+        btn.titleLabel?.font = UIFont.init(name: "Zombie-Noize", size: 25)
+        btn.titleLabel?.textColor = .black
+        btn.titleLabel?.adjustsFontSizeToFitWidth = true
+        btn.titleLabel?.textAlignment = .center
+        btn.layer.cornerRadius = 20
+        btn.backgroundColor = .systemGray
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,12 +82,14 @@ class MenuViewController: UIViewController {
         view.insertSubview(buttonPlay, at: 2)
         view.insertSubview(buttonGarage, at: 2)
         view.insertSubview(buttonSettings, at: 2)
+        view.insertSubview(buttonLeaderboard, at: 2)
         view.addSubview(buttonView)
         
         RunLoop.main.add(Timer(timeInterval: walkerAppearDuration + 1.0, repeats: false, block: { [self] _ in
             buttonView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(playClick)))
             buttonGarage.addTarget(self, action: #selector(garageClick), for: .touchUpInside)
             buttonSettings.addTarget(self, action: #selector(settingsClick), for: .touchUpInside)
+            buttonLeaderboard.addTarget(self, action: #selector(leaderboardClick), for: .touchUpInside)
         }), forMode: .default)
         
         background.snp.makeConstraints() {
@@ -84,7 +99,7 @@ class MenuViewController: UIViewController {
             $0.left.equalTo(0)
         }
 
-        walker.frame = CGRect(x: 40, y: 300, width: 350, height: 350 * 1.77)
+        walker.frame = CGRect(x: 20, y: 300, width: 350, height: 350 * 1.77)
         UIView.animate(withDuration: walkerAppearDuration, delay: 1.0, options: [.curveEaseIn], animations: { [self] in
             walker.frame = CGRect(x: -90, y: 200, width: 450, height: 450 * 1.77)
         }, completion: { _ in
@@ -107,12 +122,14 @@ class MenuViewController: UIViewController {
             $0.top.equalTo(buttonGarage).offset(140)
             $0.right.equalTo(-20)
             $0.left.equalTo(310)
-            $0.bottom.equalTo(-235)
         }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        
+        buttonLeaderboard.snp.makeConstraints() {
+            $0.top.equalTo(buttonSettings).offset(100)
+            $0.right.equalTo(-20)
+            $0.left.equalTo(310)
+        }
+        
         MusicPlayer.shared.startBackgroundMusic()
     }
     
@@ -131,6 +148,7 @@ class MenuViewController: UIViewController {
         label.textAlignment = .center
         label.font = UIFont.init(name: "Zombie-Noize", size: 75)
         label.adjustsFontSizeToFitWidth = true
+        label.layer.shadowOpacity = 0.9
         view.addSubview(label)
 
         view.mask = label
@@ -148,7 +166,22 @@ class MenuViewController: UIViewController {
     }
     
     @objc private func settingsClick() {
+        let vc = SettingsViewController()
+        let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(navbarBack))
+        backButton.tintColor = .systemGray6
+        vc.navigationItem.leftBarButtonItem = backButton
+        let navController = UINavigationController(rootViewController: vc)
+        navController.modalPresentationStyle = .fullScreen
+        navController.modalTransitionStyle = .crossDissolve
+        present(navController, animated: true, completion: nil)
+    }
+    
+    @objc private func leaderboardClick() {
         showAlert(alertTitle: "⚠️", alertMessage: "Coming soon...")
+    }
+    
+    @objc private func navbarBack() {
+        dismiss(animated: true)
     }
     
     private func showAlert(alertTitle title: String, alertMessage message: String) {

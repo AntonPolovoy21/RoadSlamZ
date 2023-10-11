@@ -21,6 +21,8 @@ class Walker {
     public let view: UIImageView
     private let road: Road
     
+    private let isBloodEnabled = Settings.structure.init().blood
+    
     init(isRev: Bool, road: Road) {
         self.isRev = isRev
         self.view = isRev ? UIImageView(image: walkerGifRev) : UIImageView(image: walkerGif)
@@ -28,9 +30,15 @@ class Walker {
     }
 
     public func checkCarHit(walker: Walker, car: Car) -> Bool {
-        guard !walker.view.frame.intersects(car.view.frame) else {
+        let padding = 5.0
+        var walkerFrame = walker.view.frame
+        walkerFrame.origin.x = walker.view.frame.origin.x + padding
+        walkerFrame.origin.y = walker.view.frame.origin.y + padding
+        walkerFrame.size = CGSize(width: walker.view.frame.width - padding * 2, height: walker.view.frame.height - padding * 2)
+        
+        guard !car.view.frame.intersects(walkerFrame) else {
             car.damageCar()
-            walker.view.image = UIImage(named: "blood")
+            walker.view.image = isBloodEnabled ? UIImage(named: "blood") : UIImage(named: "x")
             road.score += 50
             road.labelScore.text = "Score: \(road.score)"
             MusicPlayer.shared.startDeadSound()
@@ -39,7 +47,6 @@ class Walker {
                 MusicPlayer.shared.startLoseSound()
                 MusicPlayer.shared.stopBackgroundMusic()
                 road.stopRoad()
-                
             }
             else {
                 UIView.animate(withDuration: road.speed / 2, delay: 0, animations: {

@@ -11,9 +11,9 @@ import SnapKit
 class GameViewController: UIViewController {
     
     private var timer: Timer?
-    private let roadAnimationDuration = 3.0
+    private let roadAnimationDuration = Settings.structure.init().gameSpeed
     private lazy var road = Road(speed: roadAnimationDuration, parent: self, car: Car(maxX: self.view.frame.maxX, maxY: self.view.frame.maxY))
-    public let dificulty = 0.5
+    public let dificulty = Settings.structure.init().dificulty
     private var flag = true
     private let menuViewController = MenuViewController()
     

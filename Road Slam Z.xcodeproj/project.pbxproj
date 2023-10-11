@@ -29,10 +29,12 @@
 		84E7A5952ACE375E00CD413F /* GifSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7A5942ACE375E00CD413F /* GifSupport.swift */; };
 		84E7A5972ACE37FD00CD413F /* walking-dead.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84E7A5962ACE37FD00CD413F /* walking-dead.gif */; };
 		84EEA1AB2AD4AB0E00760640 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEA1AA2AD4AB0E00760640 /* SettingsViewController.swift */; };
+		84EEA1CD2AD606ED00760640 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEA1CC2AD606ED00760640 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		840907282AD1DD590021A86C /* zombnze.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = zombnze.ttf; sourceTree = "<group>"; };
+		84D4B5F72AD617E800ED5228 /* Road Slam Z.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Road Slam Z.app"; path = "/Users/admin/Desktop/Playground1/Road Slam Z/build/Debug-iphoneos/Road Slam Z.app"; sourceTree = "<absolute>"; };
 		84DE9E232AD2D4F3001A1782 /* HXW_THEY_JUDGE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HXW_THEY_JUDGE.mp3; sourceTree = "<group>"; };
 		84DE9E252AD2D695001A1782 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		84DE9E272AD2D810001A1782 /* dead.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dead.mp3; sourceTree = "<group>"; };
@@ -41,7 +43,6 @@
 		84DE9E302AD2DEAD001A1782 /* menu_zombie_roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = menu_zombie_roar.mp3; path = ../../../../../Downloads/menu_zombie_roar.mp3; sourceTree = "<group>"; };
 		84E4FE1E2ACF06D1006E6742 /* Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road.swift; sourceTree = "<group>"; };
 		84E4FE202ACF0788006E6742 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		84E7A5712ACE354E00CD413F /* Road Slam Z.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Road Slam Z.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E7A5742ACE354E00CD413F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E7A5762ACE354E00CD413F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		84E7A5782ACE354E00CD413F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		84E7A5942ACE375E00CD413F /* GifSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GifSupport.swift; path = "../../../CARS 23/CARS 23/Resources/GifSupport.swift"; sourceTree = "<group>"; };
 		84E7A5962ACE37FD00CD413F /* walking-dead.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "walking-dead.gif"; sourceTree = "<group>"; };
 		84EEA1AA2AD4AB0E00760640 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		84EEA1CC2AD606ED00760640 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,16 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				84E7A5732ACE354E00CD413F /* Road Slam Z */,
-				84E7A5722ACE354E00CD413F /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		84E7A5722ACE354E00CD413F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				84E7A5712ACE354E00CD413F /* Road Slam Z.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		84E7A5732ACE354E00CD413F /* Road Slam Z */ = {
@@ -157,6 +150,7 @@
 				84DE9E252AD2D695001A1782 /* MusicPlayer.swift */,
 				84E7A57A2ACE354E00CD413F /* Main.storyboard */,
 				84E7A57F2ACE355000CD413F /* LaunchScreen.storyboard */,
+				84EEA1CC2AD606ED00760640 /* Settings.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -182,7 +176,7 @@
 				84E7A5922ACE36B400CD413F /* SnapKit-Dynamic */,
 			);
 			productName = "Road Slam Z";
-			productReference = 84E7A5712ACE354E00CD413F /* Road Slam Z.app */;
+			productReference = 84D4B5F72AD617E800ED5228 /* Road Slam Z.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +206,7 @@
 			packageReferences = (
 				84E7A58F2ACE36B400CD413F /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
-			productRefGroup = 84E7A5722ACE354E00CD413F /* Products */;
+			productRefGroup = 84E7A5682ACE354E00CD413F;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -255,6 +249,7 @@
 				84E4FE1F2ACF06D1006E6742 /* Road.swift in Sources */,
 				84E7A5752ACE354E00CD413F /* AppDelegate.swift in Sources */,
 				84E7A5772ACE354E00CD413F /* SceneDelegate.swift in Sources */,
+				84EEA1CD2AD606ED00760640 /* Settings.swift in Sources */,
 				84E7A58A2ACE35A800CD413F /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,10 +409,6 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Polovoy.Road-Slam-Z";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,10 +432,6 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Polovoy.Road-Slam-Z";
 				PRODUCT_NAME = "$(TARGET_NAME)";

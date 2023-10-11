@@ -9,13 +9,20 @@ import AVFAudio
 import Foundation
 
 class MusicPlayer {
+    
     static let shared = MusicPlayer()
-    var audioPlayerBackground: AVAudioPlayer?
-    var audioPlayerMenuRoar: AVAudioPlayer?
-    var audioPlayerEngine: AVAudioPlayer?
-    var audioPlayerDead: AVAudioPlayer?
-    var audioPlayerLose: AVAudioPlayer?
+    private var audioPlayerBackground: AVAudioPlayer?
+    private var audioPlayerMenuRoar: AVAudioPlayer?
+    private var audioPlayerEngine: AVAudioPlayer?
+    private var audioPlayerDead: AVAudioPlayer?
+    private var audioPlayerLose: AVAudioPlayer?
 
+    public enum currentPlayingType {
+        case HXW_THEY_JUDGE
+        case THE_WALKING_DEAD
+        case IF_LOOKS_COULD_KILL
+    }
+    
     func startBackgroundMusic() {
         if let bundle = Bundle.main.path(forResource: "HXW_THEY_JUDGE", ofType: "mp3") {
             let backgroundMusic = NSURL(fileURLWithPath: bundle)
