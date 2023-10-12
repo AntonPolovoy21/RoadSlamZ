@@ -16,15 +16,9 @@ class MusicPlayer {
     private var audioPlayerEngine: AVAudioPlayer?
     private var audioPlayerDead: AVAudioPlayer?
     private var audioPlayerLose: AVAudioPlayer?
-
-    public enum currentPlayingType {
-        case HXW_THEY_JUDGE
-        case THE_WALKING_DEAD
-        case IF_LOOKS_COULD_KILL
-    }
     
     func startBackgroundMusic() {
-        if let bundle = Bundle.main.path(forResource: "HXW_THEY_JUDGE", ofType: "mp3") {
+        if let bundle = Bundle.main.path(forResource: Settings.currentPlayed, ofType: "mp3") {
             let backgroundMusic = NSURL(fileURLWithPath: bundle)
             do {
                 audioPlayerBackground = try AVAudioPlayer(contentsOf:backgroundMusic as URL)

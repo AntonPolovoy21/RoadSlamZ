@@ -46,6 +46,16 @@ class Road {
         return lbl
     }()
     
+    public let labelUserName: UILabel = {
+        let lbl = UILabel()
+        lbl.textColor = .systemRed
+        lbl.adjustsFontSizeToFitWidth = true
+        lbl.textAlignment = .center
+        lbl.text = Settings.showUserName == false ? "" : Settings.userName
+        lbl.font = UIFont.systemFont(ofSize: 14)
+        return lbl
+    }()
+    
     init(speed: Double, parent: GameViewController, car: Car) {
         self.speed = speed
         self.parent = parent
@@ -58,8 +68,6 @@ class Road {
         
         roadBackgroundFirst.frame = CGRect(x: 0, y: 0, width: maxX, height: maxY)
         roadBackgroundSecond.frame = CGRect(x: 0, y: -maxY, width: maxX, height: maxY)
-        
-        MusicPlayer.shared.startEngineSound()
         
         car.view.center = CGPoint(x: parent.view.center.x, y: maxY + 100)
         UIView.animate(withDuration: startDelay, animations: { [self] in
@@ -143,6 +151,7 @@ class Road {
         parent.view.insertSubview(car.health, at: 5)
         parent.view.insertSubview(car.fuel, at: 5)
         parent.view.insertSubview(labelScore, at: 5)
+        parent.view.insertSubview(labelUserName, at: 5)
         
         labelScore.text = "Score: \(score)"
         
@@ -176,8 +185,14 @@ class Road {
             $0.left.equalTo(30)
             $0.right.equalTo(-30)
         }
+        
+        labelUserName.snp.makeConstraints{
+            $0.top.equalTo(labelScore).offset(32)
+            $0.left.equalTo(30)
+            $0.right.equalTo(-30)
+        }
 
-        timerScore = Timer(timeInterval: 0.1, repeats: true){ [self] timer in
+        timerScore = Timer(timeInterval: parent.difficulty, repeats: true){ [self] timer in
             score += 1
             labelScore.text = "Score: \(score)"
         }
@@ -185,7 +200,7 @@ class Road {
     }
     
     public func startSpawning() {
-        timerSpawning = Timer(timeInterval: parent.dificulty, repeats: true) { [self] timer in
+        timerSpawning = Timer(timeInterval: parent.difficulty, repeats: true) { [self] timer in
             guard Int.random(in: 0...6) > 2 else { return }
             addWalker(walker: Walker(isRev: (Int.random(in: 0...1) != 0), road: self))
         }

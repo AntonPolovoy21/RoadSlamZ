@@ -13,7 +13,7 @@ class Car {
     public let height = 120.0
     private let maxX: Double
     private let maxY: Double
-    private let damageToCar = 0.1
+    private let damageToCar = 1.0
     
     public let fuel: UIProgressView = {
         let prgressView = UIProgressView()

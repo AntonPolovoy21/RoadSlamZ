@@ -84,7 +84,6 @@ class MenuViewController: UIViewController {
         view.insertSubview(buttonSettings, at: 2)
         view.insertSubview(buttonLeaderboard, at: 2)
         view.addSubview(buttonView)
-        
         RunLoop.main.add(Timer(timeInterval: walkerAppearDuration + 1.0, repeats: false, block: { [self] _ in
             buttonView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(playClick)))
             buttonGarage.addTarget(self, action: #selector(garageClick), for: .touchUpInside)

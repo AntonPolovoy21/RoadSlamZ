@@ -21,7 +21,7 @@ class Walker {
     public let view: UIImageView
     private let road: Road
     
-    private let isBloodEnabled = Settings.structure.init().blood
+    private let isBloodEnabled = Settings.blood ?? false
     
     init(isRev: Bool, road: Road) {
         self.isRev = isRev

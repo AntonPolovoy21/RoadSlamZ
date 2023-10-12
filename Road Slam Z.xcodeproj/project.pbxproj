@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		840907292AD1DD590021A86C /* zombnze.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 840907282AD1DD590021A86C /* zombnze.ttf */; };
+		84D4B61C2AD74F6F00ED5228 /* THE_WALKING_DEAD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84D4B61B2AD74F6F00ED5228 /* THE_WALKING_DEAD.mp3 */; };
+		84D4B61E2AD7522E00ED5228 /* IF_LOOKS_COULD_KILL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84D4B61D2AD7522E00ED5228 /* IF_LOOKS_COULD_KILL.mp3 */; };
 		84DE9E242AD2D4F3001A1782 /* HXW_THEY_JUDGE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84DE9E232AD2D4F3001A1782 /* HXW_THEY_JUDGE.mp3 */; };
 		84DE9E262AD2D695001A1782 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE9E252AD2D695001A1782 /* MusicPlayer.swift */; };
 		84DE9E282AD2D810001A1782 /* dead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84DE9E272AD2D810001A1782 /* dead.mp3 */; };
@@ -30,11 +32,15 @@
 		84E7A5972ACE37FD00CD413F /* walking-dead.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84E7A5962ACE37FD00CD413F /* walking-dead.gif */; };
 		84EEA1AB2AD4AB0E00760640 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEA1AA2AD4AB0E00760640 /* SettingsViewController.swift */; };
 		84EEA1CD2AD606ED00760640 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEA1CC2AD606ED00760640 /* Settings.swift */; };
+		F5C98952E9069192D8D0AF4C /* Pods_Road_Slam_Z.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E73B56B98558162E542D96 /* Pods_Road_Slam_Z.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14A5E408618379629A257B77 /* Pods-Road Slam Z.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Road Slam Z.debug.xcconfig"; path = "Target Support Files/Pods-Road Slam Z/Pods-Road Slam Z.debug.xcconfig"; sourceTree = "<group>"; };
 		840907282AD1DD590021A86C /* zombnze.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = zombnze.ttf; sourceTree = "<group>"; };
-		84D4B5F72AD617E800ED5228 /* Road Slam Z.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Road Slam Z.app"; path = "/Users/admin/Desktop/Playground1/Road Slam Z/build/Debug-iphoneos/Road Slam Z.app"; sourceTree = "<absolute>"; };
+		84D4B61A2AD71C4900ED5228 /* Road Slam Z.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Road Slam Z.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D4B61B2AD74F6F00ED5228 /* THE_WALKING_DEAD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = THE_WALKING_DEAD.mp3; path = ../../../../../Downloads/THE_WALKING_DEAD.mp3; sourceTree = "<group>"; };
+		84D4B61D2AD7522E00ED5228 /* IF_LOOKS_COULD_KILL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = IF_LOOKS_COULD_KILL.mp3; path = ../../../../../Downloads/IF_LOOKS_COULD_KILL.mp3; sourceTree = "<group>"; };
 		84DE9E232AD2D4F3001A1782 /* HXW_THEY_JUDGE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HXW_THEY_JUDGE.mp3; sourceTree = "<group>"; };
 		84DE9E252AD2D695001A1782 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		84DE9E272AD2D810001A1782 /* dead.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dead.mp3; sourceTree = "<group>"; };
@@ -56,6 +62,8 @@
 		84E7A5962ACE37FD00CD413F /* walking-dead.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "walking-dead.gif"; sourceTree = "<group>"; };
 		84EEA1AA2AD4AB0E00760640 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		84EEA1CC2AD606ED00760640 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A0D688BA7FE19FF21287ED28 /* Pods-Road Slam Z.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Road Slam Z.release.xcconfig"; path = "Target Support Files/Pods-Road Slam Z/Pods-Road Slam Z.release.xcconfig"; sourceTree = "<group>"; };
+		D4E73B56B98558162E542D96 /* Pods_Road_Slam_Z.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Road_Slam_Z.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 			files = (
 				84E7A5912ACE36B400CD413F /* SnapKit in Frameworks */,
 				84E7A5932ACE36B400CD413F /* SnapKit-Dynamic in Frameworks */,
+				F5C98952E9069192D8D0AF4C /* Pods_Road_Slam_Z.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				84DE9E232AD2D4F3001A1782 /* HXW_THEY_JUDGE.mp3 */,
+				84D4B61B2AD74F6F00ED5228 /* THE_WALKING_DEAD.mp3 */,
+				84D4B61D2AD7522E00ED5228 /* IF_LOOKS_COULD_KILL.mp3 */,
 				84DE9E302AD2DEAD001A1782 /* menu_zombie_roar.mp3 */,
 				84DE9E2B2AD2DDBC001A1782 /* engine.mp3 */,
 				84DE9E272AD2D810001A1782 /* dead.mp3 */,
@@ -103,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				84E7A5732ACE354E00CD413F /* Road Slam Z */,
+				E22BC271534545DC02A77B53 /* Pods */,
+				D29136F7C02FF49FC3055097 /* Frameworks */,
+				84D4B61A2AD71C4900ED5228 /* Road Slam Z.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +169,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		D29136F7C02FF49FC3055097 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4E73B56B98558162E542D96 /* Pods_Road_Slam_Z.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E22BC271534545DC02A77B53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14A5E408618379629A257B77 /* Pods-Road Slam Z.debug.xcconfig */,
+				A0D688BA7FE19FF21287ED28 /* Pods-Road Slam Z.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84E7A5852ACE355000CD413F /* Build configuration list for PBXNativeTarget "Road Slam Z" */;
 			buildPhases = (
+				8E373C5E02C8B4857EB7251E /* [CP] Check Pods Manifest.lock */,
 				84E7A56D2ACE354E00CD413F /* Sources */,
 				84E7A56E2ACE354E00CD413F /* Frameworks */,
 				84E7A56F2ACE354E00CD413F /* Resources */,
+				A668D8129B02C4E070B481EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,7 +209,7 @@
 				84E7A5922ACE36B400CD413F /* SnapKit-Dynamic */,
 			);
 			productName = "Road Slam Z";
-			productReference = 84D4B5F72AD617E800ED5228 /* Road Slam Z.app */;
+			productReference = 84D4B61A2AD71C4900ED5228 /* Road Slam Z.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -220,12 +253,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D4B61E2AD7522E00ED5228 /* IF_LOOKS_COULD_KILL.mp3 in Resources */,
 				84E7A5972ACE37FD00CD413F /* walking-dead.gif in Resources */,
 				84DE9E312AD2DEAD001A1782 /* menu_zombie_roar.mp3 in Resources */,
 				84DE9E2A2AD2DB8D001A1782 /* lose.mp3 in Resources */,
 				84E7A5812ACE355000CD413F /* LaunchScreen.storyboard in Resources */,
 				84DE9E282AD2D810001A1782 /* dead.mp3 in Resources */,
 				84E7A57E2ACE355000CD413F /* Assets.xcassets in Resources */,
+				84D4B61C2AD74F6F00ED5228 /* THE_WALKING_DEAD.mp3 in Resources */,
 				840907292AD1DD590021A86C /* zombnze.ttf in Resources */,
 				84DE9E242AD2D4F3001A1782 /* HXW_THEY_JUDGE.mp3 in Resources */,
 				84DE9E2C2AD2DDBC001A1782 /* engine.mp3 in Resources */,
@@ -234,6 +269,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E373C5E02C8B4857EB7251E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Road Slam Z-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A668D8129B02C4E070B481EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Road Slam Z/Pods-Road Slam Z-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Road Slam Z/Pods-Road Slam Z-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Road Slam Z/Pods-Road Slam Z-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84E7A56D2ACE354E00CD413F /* Sources */ = {
@@ -313,7 +390,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -328,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -376,7 +453,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -385,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -397,6 +474,7 @@
 		};
 		84E7A5862ACE355000CD413F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A5E408618379629A257B77 /* Pods-Road Slam Z.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -420,6 +498,7 @@
 		};
 		84E7A5872ACE355000CD413F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D688BA7FE19FF21287ED28 /* Pods-Road Slam Z.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
